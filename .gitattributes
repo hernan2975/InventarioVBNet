@@ -1,0 +1,15 @@
+# Normaliza finales de línea
+* text=auto
+
+# Archivos de solución y proyecto con CRLF
+*.sln text eol=crlf
+*.vbproj text eol=crlf
+
+# Archivos de configuración
+*.config text eol=crlf
+*.resx text eol=crlf
+
+# Archivos de código fuente
+*.vb text eol=crlf
+*.cs text eol=crlf
+
