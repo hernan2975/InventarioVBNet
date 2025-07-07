@@ -1,0 +1,36 @@
+# Archivos de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+
+# Resultados de compilación
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+
+# Archivos de pruebas
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# Archivos de publicación
+publish/
+*.publish.xml
+*.azurePubxml
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+*.~*
+
+# Archivos de configuración local
+*.dbmdl
+*.vscode/
