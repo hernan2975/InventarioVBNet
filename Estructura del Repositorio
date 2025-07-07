@@ -1,0 +1,37 @@
+InventarioVBNet/
+│
+├── Presentacion/               # Capa de presentación (Windows Forms)
+│   ├── FormPrincipal.vb
+│   ├── FormProductos.vb
+│   ├── FormProveedores.vb
+│   └── ...
+│
+├── Negocio/                    # Capa de lógica de negocio
+│   ├── ProductoBL.vb
+│   ├── ProveedorBL.vb
+│   └── MovimientoInventarioBL.vb
+│
+├── Datos/                      # Capa de acceso a datos
+│   ├── Conexion.vb
+│   ├── ProductoDAL.vb
+│   ├── ProveedorDAL.vb
+│   └── MovimientoInventarioDAL.vb
+│
+├── Entidades/                 # Modelos de datos
+│   ├── Producto.vb
+│   ├── Proveedor.vb
+│   └── MovimientoInventario.vb
+│
+├── Reportes/                  # Reportes PDF o Excel
+│   └── ReporteStock.rdlc
+│
+├── BaseDeDatos/               # Script o backup de la DB
+│   └── inventario_script.sql
+│
+├── Documentacion/             # Manual técnico y de usuario
+│   ├── ManualUsuario.pdf
+│   └── DocumentacionTecnica.pdf
+│
+├── InventarioVBNet.sln        # Solución de Visual Studio
+└── README.md
+
