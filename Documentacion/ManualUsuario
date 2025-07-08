@@ -1,0 +1,77 @@
+# a crear
+Índice del Manual
+Introducción
+
+Requisitos del sistema
+
+Instalación paso a paso
+
+Pantalla principal y navegación
+
+Gestión de productos
+
+Gestión de proveedores
+
+Registro de movimientos
+
+Generación de reportes
+
+Preguntas frecuentes
+
+Contacto y soporte
+
+✍️ Ejemplo de contenido
+Gestión de Productos: Para agregar un nuevo producto, diríjase al menú “Productos” y haga clic en “Agregar”. Complete los campos requeridos y presione “Guardar”. El sistema validará el stock mínimo automáticamente.
+
+# Manual de Usuario – InventarioVBNet
+
+## 1. Introducción
+Bienvenido al sistema **InventarioVBNet**, una aplicación de escritorio para la gestión de inventario en pequeños comercios. Este manual explica cómo utilizar cada módulo del sistema.
+
+## 2. Requisitos del Sistema
+- Sistema operativo: Windows 10 o superior
+- .NET Framework 4.7+
+- SQL Server LocalDB instalado
+- Visual Studio (solo para desarrolladores)
+
+## 3. Instalación
+1. Descargar el ejecutable desde el enlace provisto.
+2. Ejecutar el instalador y seguir los pasos indicados.
+3. Restaurar la base de datos desde el archivo `inventario_script.sql`.
+
+## 4. Inicio de sesión / Acceso
+El sistema no requiere credenciales. Al abrir el ejecutable se accede directamente a la pantalla principal.
+
+## 5. Pantalla Principal
+Desde el menú principal podés acceder a:
+- **Gestión de productos**
+- **Gestión de proveedores**
+- **Registro de movimientos**
+- **Reportes de stock**
+- **Salir del sistema**
+
+## 6. Módulo de Productos
+- Agregá nuevos productos completando Nombre, Stock y Categoría.
+- Editá o eliminá productos existentes.
+- El sistema mostrará alertas si el stock cae por debajo del mínimo.
+
+## 7. Módulo de Proveedores
+- Registrá proveedores con nombre, teléfono y email.
+- Editá o eliminá registros desde la grilla.
+
+## 8. Movimientos de Inventario
+- Registrá entradas o salidas seleccionando el producto, tipo, cantidad y detalle.
+- Las salidas reducen el stock. Si no hay stock suficiente, el sistema lo indicará.
+
+## 9. Reportes
+- Generá reportes de stock actual y movimientos.
+- Exportá los reportes a PDF o Excel.
+
+## 10. Preguntas Frecuentes
+- **¿Puedo modificar la base de datos?** Sí, usando SQL Server Management Studio.
+- **¿Cómo actualizo el sistema?** Descargando la nueva versión del ejecutable.
+
+## 11. Contacto
+Para soporte técnico o sugerencias:  
+📧 soporte@inventariovbnet.com  
+📞 +54 11 1200-0000
