@@ -1,0 +1,5 @@
+ReportViewer1.LocalReport.ReportPath = "Reportes/ReporteStock.rdlc"
+ReportViewer1.LocalReport.DataSources.Clear()
+ReportViewer1.LocalReport.DataSources.Add(New ReportDataSource("dsProductos", productosDataTable))
+ReportViewer1.RefreshReport()
+
