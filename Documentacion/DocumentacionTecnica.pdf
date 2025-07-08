@@ -20,3 +20,58 @@ Licencia y créditos
 
 🧩 Ejemplo de descripción técnica
 ProductoDAL.vb: Esta clase contiene métodos para interactuar con la tabla Productos. Utiliza SqlCommand y SqlDataAdapter para ejecutar consultas. Se recomienda encapsular la lógica de conexión en la clase Conexion.vb para mantener el desacoplamiento.
+
+# Documentación Técnica – InventarioVBNet
+
+## 1. Descripción general
+Este documento describe la arquitectura, componentes y lógica del sistema **InventarioVBNet**, una app de escritorio construida con VB.NET y SQL Server LocalDB.
+
+## 2. Arquitectura
+- **Patrón utilizado:** Arquitectura en capas
+  - **Presentación:** Formulario Windows Forms
+  - **Negocio:** Lógica de validación y flujo
+  - **Datos:** Acceso a base de datos con SQLClient
+  - **Entidades:** Clases modelo del sistema
+
+## 3. Diagrama de capas
+
+[Presentacion] --> [Negocio] --> [Datos] --> [SQL Server] ↑ ↓ [Entidades] <-- intercambio de objetos -->
+
+
+## 4. Estructura del proyecto
+
+## 5. Base de datos
+- DB: `InventarioDB`
+- Tablas: `Productos`, `Proveedores`, `Categorias`, `MovimientosInventario`
+- Relación: Cada producto pertenece a una categoría y puede estar vinculado a un proveedor.
+
+## 6. Componentes clave
+
+### ProductoBL.vb
+- Métodos: `ObtenerTodos()`, `Agregar()`, `Actualizar()`, `Eliminar()`
+- Validaciones: Stock negativo, campos obligatorios
+
+### ProductoDAL.vb
+- Acceso SQL: `SELECT`, `INSERT`, `UPDATE`
+- Conexión gestionada por `Conexion.vb`
+
+### MovimientoInventarioBL.vb
+- Métodos: `RegistrarEntrada()`, `RegistrarSalida()`
+- Utiliza `ProductoDAL` para actualizar stock
+
+## 7. Reportes
+- Tipo: RDLC
+- Fuente: `dsProductos`
+- Exportable: PDF, Excel
+- Vista previa en `ReportViewer`
+
+## 8. Recomendaciones
+- Modularizar futuras funcionalidades (usuarios, seguridad)
+- Migrar a SQL Server remoto para multiusuario
+- Aplicar CI/CD con GitHub Actions
+
+## 9. Licencia
+MIT License: Código abierto para uso y modificación educativa.
+
+## 10. Créditos
+Desarrollado por Hernán — inspirado en principios de accesibilidad y arquitectura limpia.
