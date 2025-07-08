@@ -1,0 +1,22 @@
+# a crear 
+🧾 Índice técnico
+Arquitectura del sistema
+
+Diagrama de capas
+
+Estructura de carpetas y namespaces
+
+Modelo de base de datos (con diagrama ER)
+
+Conexión a SQL Server LocalDB
+
+Detalles de cada clase (BL, DAL, Entidades)
+
+Reportes RDLC y configuración
+
+Recomendaciones de escalabilidad
+
+Licencia y créditos
+
+🧩 Ejemplo de descripción técnica
+ProductoDAL.vb: Esta clase contiene métodos para interactuar con la tabla Productos. Utiliza SqlCommand y SqlDataAdapter para ejecutar consultas. Se recomienda encapsular la lógica de conexión en la clase Conexion.vb para mantener el desacoplamiento.
